@@ -1,0 +1,28 @@
+{
+  "name": "node-boilerplate",
+  "version": "1.0.0",
+  "description": "Node Boilerplate",
+  "main": "app.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucianojsjr/node-boilerplate.git"
+  },
+  "keywords": [
+    "node",
+    "boilerplate",
+    "node-api"
+  ],
+  "author": "Luciano José",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lucianojsjr/node-boilerplate/issues"
+  },
+  "homepage": "https://github.com/lucianojsjr/node-boilerplate#readme",
+  "devDependencies": {
+    "colors": "^1.1.2",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^4.0.0",
+    "gulp-watch": "^4.3.11"
+  }
+}
