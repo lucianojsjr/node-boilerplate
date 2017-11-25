@@ -1,0 +1,29 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "root",
+    "database": "boilerplate",
+    "options": {
+      "host": "localhost",
+      "dialect": "postgres",
+      "port": 5432,
+      "logging": false
+    }
+  },
+  "test": {
+    "username": "postgres",
+    "password": "root",
+    "database": "boilerplate",
+    "host": "localhost",
+    "dialect": "postgres",
+    "options": {
+      "host": "localhost",
+      "dialect": "postgres",
+      "port": 5432,
+      "logging": false
+    }
+  },
+  "production": {
+    "dialect": "postgres"
+  }
+}
