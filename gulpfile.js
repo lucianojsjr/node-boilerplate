@@ -5,7 +5,7 @@ const colors = require('colors');
 const lintFiles = [];
 
 // [START] - ESLINT REALTIME
-lintFiles.push('app.js');
+lintFiles.push('index.js');
 
 watch(lintFiles, function(file) {
 	let prefix;

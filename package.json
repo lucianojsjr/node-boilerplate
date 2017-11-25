@@ -24,5 +24,10 @@
     "gulp": "^3.9.1",
     "gulp-eslint": "^4.0.0",
     "gulp-watch": "^4.3.11"
+  },
+  "dependencies": {
+    "pg": "^7.4.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.23.0"
   }
 }

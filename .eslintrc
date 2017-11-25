@@ -183,8 +183,11 @@
     ],
     "eol-last": 0,
     "func-style": [
-      2,
-      "declaration"
+      "error",
+      "declaration",
+      {
+        "allowArrowFunctions": true
+      }
     ],
     "newline-after-var": [
       2,
