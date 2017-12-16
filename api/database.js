@@ -27,9 +27,11 @@ readAll(__dirname, [])
 		db[model.name] = model;
 	});
 
-Object.keys(db).forEach(function(modelName) {
-	if ('associate' in db[modelName]) {
-		db[modelName].associate(db);
+Object.keys(db).forEach((modelName) => {
+	if ('classMethods' in db[modelName].options) {
+		if ('associate' in db[modelName].options.classMethods) {
+			db[modelName].options.classMethods.associate(db);
+		}
 	}
 });
 
