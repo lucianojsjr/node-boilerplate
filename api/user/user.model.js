@@ -5,7 +5,10 @@ const UserModel = (sequelize, DataTypes) => {
 	}, {
 		underscored: true,
 		classMethods: {
-			associate: () => {
+			associate: (models) => {
+				User.belongsTo(models.company, {
+					foreignKey: 'company_id'
+				});
 			}
 		}
 	});
