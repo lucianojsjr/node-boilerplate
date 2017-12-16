@@ -1,19 +1,14 @@
-const UserModel = require('../database').user;
+const UserDAO = require('./user.dao');
+const Utils = require('../utils/utils');
 
 const indexAction = (req, res) => {
-	UserModel.findAll({
-		raw: true
-	}).then((data) => {
-		res.json({
-			status: 'success',
-			data: data
-		});
-	}).catch((error) => {
-		res.json({
-			status: 'error',
-			message: error.message
-		});
-	});
+	const id = req.params.user_id;
+
+	if (id) {
+		return UserDAO.find(id, (error, data) => Utils.handleResponse(error, data, res));
+	}
+
+	UserDAO.listAll((error, data) => Utils.handleResponse(error, data, res));
 };
 
 const UserController = {
