@@ -29,6 +29,6 @@
     "express": "^4.16.2",
     "pg": "^7.4.0",
     "pg-hstore": "^2.3.2",
-    "sequelize": "^4.23.0"
+    "sequelize": "^4.28.5"
   }
 }
