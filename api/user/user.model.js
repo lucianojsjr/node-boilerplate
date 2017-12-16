@@ -5,7 +5,7 @@ const UserModel = (sequelize, DataTypes) => {
 	}, {
 		underscored: true,
 		classMethods: {
-			associate: function() {
+			associate: () => {
 			}
 		}
 	});
