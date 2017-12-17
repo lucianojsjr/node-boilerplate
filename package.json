@@ -26,7 +26,9 @@
     "gulp-watch": "^4.3.11"
   },
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.2",
+    "helmet": "^3.9.0",
     "pg": "^7.4.0",
     "pg-hstore": "^2.3.2",
     "sequelize": "^4.28.5"

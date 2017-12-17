@@ -7,9 +7,12 @@ const routes = require('./api/routes');
 
 let app;
 let server;
+let middlewares;
 
 const configApp = () => {
 	app = express();
+
+	middlewares = require('./middlewares/index')(app);
 	app.use('/api', routes);
 };
 
